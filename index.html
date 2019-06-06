@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>Ajax 5</h2>
+    </header>
+    <input type="text" id="searchCountry" placeholder="zoek een land..." onfocus="value=''">
+    <div id="txtHint">Hier komt de lijst</div>
+    <footer>
+      <a href="https://github.com/eniciodehaas/ajax5" target="_blank"><img src="github.svg" alt="github logo" height="30px">GitHub</a>
+    </footer>
+    <script>
+      searchCountry = document.getElementById('searchCountry');
+      searchCountry.addEventListener('keyup', function() {
+        showList(searchCountry.value,'list');
+      });
+    </script>
+    <script src="ajax.js"></script>
+  </body>
+</html>
