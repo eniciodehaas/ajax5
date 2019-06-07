@@ -7,8 +7,8 @@ $con = mysqli_connect($servername,$uid,$pwd,$database);
 if (!$con) {
   die('Geen verbinding: ' . mysqli_error($con));
 }
-mysqli_select_db($con,"world");
-$sql = "SELECT * FROM Country WHERE name LIKE '$search%' ";
+mysqli_select_db($con,"c3593world");
+$sql = "SELECT * FROM country WHERE name LIKE '$search%' ";
 if ($type == "list") {
   $result = mysqli_query($con,$sql);
   while ($row = mysqli_fetch_array($result)) {
